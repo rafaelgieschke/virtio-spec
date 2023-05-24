@@ -10813,18 +10813,50 @@ class="pcrr8t-x-x-80"> </span><br />
  id="x1-164003r2"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span 
+class="pcrr8t-x-x-80">union</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="pcrr8t-x-x-80">{</span></span><span 
+class="pcrr8t-x-x-80"> </span><br /> 
+<span class="label"><a 
+ id="x1-164004r3"></a></span><span 
+class="pcrr8t-x-x-80"> </span><span 
+class="pcrr8t-x-x-80"> </span><span 
+class="pcrr8t-x-x-80"> </span><span 
+class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">vq_index</span></span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">:</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">16;</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">/*</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
-class="pcrr8t-x-x-80">previously</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
-class="pcrr8t-x-x-80">known</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
-class="pcrr8t-x-x-80">as</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
-class="pcrr8t-x-x-80">vqn</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="pcrr8t-x-x-80">Used</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="pcrr8t-x-x-80">if</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="pcrr8t-x-x-80">VIRTIO_F_NOTIF_CONFIG_DATA</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="pcrr8t-x-x-80">not</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="pcrr8t-x-x-80">negotiated</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">*/</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-164004r3"></a></span><span 
+ id="x1-164005r4"></a></span><span 
+class="pcrr8t-x-x-80"> </span><span 
+class="pcrr8t-x-x-80"> </span><span 
+class="pcrr8t-x-x-80"> </span><span 
+class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span 
+class="pcrr8t-x-x-80">vq_notif_config_data</span></span><span style="color:#000000"><span 
+class="pcrr8t-x-x-80">:</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="pcrr8t-x-x-80">16;</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="pcrr8t-x-x-80">/*</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="pcrr8t-x-x-80">Used</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="pcrr8t-x-x-80">if</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="pcrr8t-x-x-80">VIRTIO_F_NOTIF_CONFIG_DATA</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="pcrr8t-x-x-80">negotiated</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
+class="pcrr8t-x-x-80">*/</span></span><span 
+class="pcrr8t-x-x-80"> </span><br /> 
+<span class="label"><a 
+ id="x1-164006r5"></a></span><span 
+class="pcrr8t-x-x-80"> </span><span 
+class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span 
+class="pcrr8t-x-x-80">};</span></span><span 
+class="pcrr8t-x-x-80"> </span><br /> 
+<span class="label"><a 
+ id="x1-164007r6"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">next_off</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
@@ -10832,7 +10864,7 @@ class="pcrr8t-x-x-80">:</span></span><span style="color:#000000"> </span><span s
 class="pcrr8t-x-x-80">15;</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-164005r4"></a></span><span 
+ id="x1-164008r7"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">next_wrap</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
@@ -10840,7 +10872,7 @@ class="pcrr8t-x-x-80">:</span></span><span style="color:#000000"> </span><span s
 class="pcrr8t-x-x-80">1;</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-164006r5"></a></span><span style="color:#000000"><span 
+ id="x1-164009r8"></a></span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">};</span></span>
 </pre>
      <ul class="itemize1">
@@ -10861,7 +10893,7 @@ href="#x1-1010009">Driver Notifications<!--tex4ht:ref: sec:Basic Facilities of a
 <!--l. 1097--><p class="noindent" >See <a 
 href="#x1-1370004">4.1.4.4<!--tex4ht:ref: sec:Virtio Transport Options / Virtio Over PCI Bus / PCI Device Layout / Notification capability --></a> for how to calculate the Queue Notify address.
 <a 
- id="x1-164007r162"></a>
+ id="x1-164010r162"></a>
 <!--l. 1100--><p class="noindent" ><h5 class="paragraphHead"><span class="titlemark">4.1.5.2.1</span> <a 
  id="x1-1650001"></a>Driver Requirements: Available Buffer Notifications</h5>
 If VIRTIO_F_NOTIFICATION_DATA is not negotiated, the driver notification
