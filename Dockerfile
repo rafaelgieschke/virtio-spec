@@ -7,3 +7,5 @@ WORKDIR /build
 COPY . .
 RUN ./makehtml.sh
 RUN cp *.css /artifacts && cp *.html /artifacts/index.html
+RUN EMAIL=invalid@invalid.invalid ./makediffhtml.sh
+RUN cp *.css *.html /artifacts
