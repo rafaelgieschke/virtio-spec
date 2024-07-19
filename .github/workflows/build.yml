@@ -9,6 +9,8 @@ jobs:
     #    args: sh -c "apt-get update && apt-get install -y file fonts-liberation zip && ./makehtml.sh"
     #- run: sudo apt-get update && sudo apt-get install -y fonts-liberation texlive-full && ./makehtml.sh
     - run: docker build . && docker cp "$(docker create "$(docker build -q .)")":/artifacts .
+    - run: |
+        sed -i "1i<a href=\"$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\">Source: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID</a><br />" artifacts/index.html
     - uses: JamesIves/github-pages-deploy-action@4.1.8
       with:
         branch: gh-pages
