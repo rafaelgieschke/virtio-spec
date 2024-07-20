@@ -1,0 +1,1406 @@
+ 
+/* start css.sty */
+.cmr-7{font-size:70%;}
+.cmmi-7{font-size:70%;font-style: italic;}
+.cmmi-10{font-style: italic;}
+.aeti-10{ font-style: italic;}
+.aeti-10{ font-style: italic;}
+.aeti-10{ font-style: italic;}
+.aeti-10{ font-style: italic;}
+.aeti-10{ font-style: italic;}
+.aeti-10{ font-style: italic;}
+.aeti-10{ font-style: italic;}
+.aeti-10{ font-style: italic;}
+.aeti-10{ font-style: italic;}
+.aeti-10{ font-style: italic;}
+.pcrr8t-{ font-family: 'Nimbus Mono L', serif;}
+.pcrr8t-{ font-family: 'Nimbus Mono L', serif;}
+.aess-10{font-family: sans-serif;}
+.aess-10{font-family: sans-serif;}
+.aess-10{font-family: sans-serif;}
+.aess-10{font-family: sans-serif;}
+.aess-10{font-family: sans-serif;}
+.aess-10{font-family: sans-serif;}
+.aess-10{font-family: sans-serif;}
+.aess-10{font-family: sans-serif;}
+.aess-10{font-family: sans-serif;}
+.aess-10{font-family: sans-serif;}
+.aer-9{font-size:90%;}
+.aer-8{font-size:80%;}
+.pcrr8t-x-x-80{font-size:80%; font-family: 'Nimbus Mono L', serif;}
+.pcrr8t-x-x-80{ font-family: 'Nimbus Mono L', serif;}
+.aessi-10{ font-style: italic; font-family: sans-serif;}
+.aessi-10{ font-style: italic; font-family: sans-serif;}
+.aessi-10{ font-style: italic; font-family: sans-serif;}
+.aessi-10{ font-style: italic; font-family: sans-serif;}
+.aessi-10{ font-style: italic; font-family: sans-serif;}
+.aessi-10{ font-style: italic; font-family: sans-serif;}
+.aessi-10{ font-style: italic; font-family: sans-serif;}
+.aessi-10{ font-style: italic; font-family: sans-serif;}
+.aessi-10{ font-style: italic; font-family: sans-serif;}
+.aessi-10{ font-style: italic; font-family: sans-serif;}
+.aebxti-10{font-weight: bold; font-style: italic;}
+.aebxti-10{font-weight: bold; font-style: italic;}
+.aebxti-10{font-weight: bold; font-style: italic;}
+.aebxti-10{font-weight: bold; font-style: italic;}
+.aebxti-10{font-weight: bold; font-style: italic;}
+.aebxti-10{font-weight: bold; font-style: italic;}
+.aebxti-10{font-weight: bold; font-style: italic;}
+.aebxti-10{font-weight: bold; font-style: italic;}
+.aebxti-10{font-weight: bold; font-style: italic;}
+.aebxti-10{font-weight: bold; font-style: italic;}
+.aess9-{font-size:90%;}
+.aeti8-{font-size:80%;}
+p{margin-top:0;margin-bottom:0}
+p.indent{text-indent:0;}
+p + p{margin-top:1em;}
+p + div, p + pre {margin-top:1em;}
+div + p, pre + p {margin-top:1em;}
+a { overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; hyphens: auto; }
+@media print {div.crosslinks {visibility:hidden;}}
+table.tabular{border-collapse: collapse; border-spacing: 0;}
+a img { border-top: 0; border-left: 0; border-right: 0; }
+center { margin-top:1em; margin-bottom:1em; }
+td center { margin-top:0em; margin-bottom:0em; }
+.Canvas { position:relative; }
+img.math{vertical-align:middle;}
+div.par-math-display, div.math-display{text-align:center;}
+li p.indent { text-indent: 0em }
+li p:first-child{ margin-top:0em; }
+li p:last-child, li div:last-child { margin-bottom:0.5em; }
+li p:first-child{ margin-bottom:0; }
+li p~ul:last-child, li p~ol:last-child{ margin-bottom:0.5em; }
+.enumerate1 {list-style-type:decimal;}
+.enumerate2 {list-style-type:lower-alpha;}
+.enumerate3 {list-style-type:lower-roman;}
+.enumerate4 {list-style-type:upper-alpha;}
+div.newtheorem { margin-bottom: 2em; margin-top: 2em;}
+div.newtheorem .head{font-weight: bold;}
+.obeylines-h,.obeylines-v {white-space: nowrap; }
+div.obeylines-v p { margin-top:0; margin-bottom:0; }
+.overline{ text-decoration:overline; }
+.overline img{ border-top: 1px solid black; }
+td.displaylines {text-align:center; white-space:nowrap;}
+.centerline {text-align:center;}
+.rightline {text-align:right;}
+pre.verbatim {font-family: monospace,monospace; text-align:left; clear:both; }
+.fbox {padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+div.fbox {display:table}
+div.center div.fbox {text-align:center; clear:both; padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+div.minipage{width:100%;}
+div.center, div.center div.center {text-align: center; margin-left:1em; margin-right:1em;}
+div.center div {text-align: left;}
+div.flushright, div.flushright div.flushright {text-align: right;}
+div.flushright div {text-align: left;}
+div.flushleft {text-align: left;}
+.underline{ text-decoration:underline; }
+.underline img{ border-bottom: 1px solid black; margin-bottom:1pt; }
+.framebox-c, .framebox-l, .framebox-r { padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+.framebox-c {text-align:center;}
+.framebox-l {text-align:left;}
+.framebox-r {text-align:right;}
+span.thank-mark{ vertical-align: super }
+span.footnote-mark sup.textsuperscript, span.footnote-mark a sup.textsuperscript{ font-size:80%; }
+div.footnotes{border-top:solid 1px black; border-bottom:solid 1px black; padding-bottom:1ex; padding-top:0.5ex; margin-right:15%; margin-top:2ex; font-style:italic; font-size:85%;}
+div.footnotes p{margin-top:0; margin-bottom:0; text-indent:0;}
+div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; }
+table.tabular td p{margin-top:0em;}
+table.tabular {margin-left: auto; margin-right: auto;}
+td p:first-child{ margin-top:0em; }
+td p:last-child{ margin-bottom:0em; }
+div.td00{ margin-left:0pt; margin-right:0pt; }
+div.td01{ margin-left:0pt; margin-right:5pt; }
+div.td10{ margin-left:5pt; margin-right:0pt; }
+div.td11{ margin-left:5pt; margin-right:5pt; }
+table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+td.td00{ padding-left:0pt; padding-right:0pt; }
+td.td01{ padding-left:0pt; padding-right:5pt; }
+td.td10{ padding-left:5pt; padding-right:0pt; }
+td.td11{ padding-left:5pt; padding-right:5pt; }
+table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+.hline hr, .cline hr{ height : 0px; margin:0px; }
+.hline td, .cline td{ padding: 0; }
+.hline hr, .cline hr{border:none;border-top:1px solid black;}
+.hline {border-top: 1px solid black;}
+.tabbing-right {text-align:right;}
+div.float, div.figure {margin-left: auto; margin-right: auto;}
+div.float img {text-align:center;}
+div.figure img {text-align:center;}
+.marginpar,.reversemarginpar {width:20%; float:right; text-align:left; margin-left:auto; margin-top:0.5em; font-size:85%; text-decoration:underline;}
+.marginpar p,.reversemarginpar p{margin-top:0.4em; margin-bottom:0.4em;}
+.reversemarginpar{float:left;}
+table.equation {width:100%;}
+.equation td{text-align:center; }
+td.equation { margin-top:1em; margin-bottom:1em; } 
+td.equation-label { width:5%; text-align:center; }
+td.eqnarray4 { width:5%; white-space: normal; }
+td.eqnarray2 { width:5%; }
+table.eqnarray-star, table.eqnarray {width:100%;}
+div.eqnarray{text-align:center;}
+div.array {text-align:center;}
+div.pmatrix {text-align:center;}
+table.pmatrix {width:100%;}
+span.pmatrix img{vertical-align:middle;}
+div.pmatrix {text-align:center;}
+table.pmatrix {width:100%;}
+span.bar-css {text-decoration:overline;}
+img.cdots{vertical-align:middle;}
+.partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}
+.chapterToc a, .chapterToc, .likechapterToc a, .likechapterToc, .appendixToc a, .appendixToc {line-height: 200%; font-weight:bold;}
+.index-item, .index-subitem, .index-subsubitem {display:block}
+div.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:left;}
+div.caption span.id{font-weight: bold; white-space: nowrap; }
+h1.partHead{text-align: center}
+p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+p.bibitem-p { text-indent: 0em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+.paragraphHead, .likeparagraphHead { margin-top:2em; font-weight: bold;}
+.subparagraphHead, .likesubparagraphHead { font-weight: bold;}
+.verse{white-space:nowrap; margin-left:2em}
+div.maketitle {text-align:center;}
+h2.titleHead{text-align:center;}
+div.maketitle{ margin-bottom: 2em; }
+div.author, div.date {text-align:center;}
+div.thanks{text-align:left; margin-left:10%; font-size:85%; font-style:italic; }
+h1.partHead{text-align: center}
+div.abstract p {margin-left:5%; margin-right:5%;}
+div.abstract {width:100%;}
+.abstracttitle{text-align:center;margin-bottom:1em;}
+.rotatebox{display: inline-block;}
+.framedenv{border: 1px solid black;}
+.lstlisting .label{margin-right:0.5em; }
+pre.lstlisting{font-family: monospace,monospace; white-space: nowrap; margin-top:0.5em; margin-bottom:0.5em; }
+pre.lstinputlisting{ font-family: monospace,monospace; white-space: nowrap; }
+.lstinputlisting .label{margin-right:0.5em;}
+pre.fancyvrb {white-space: pre-wrap; margin:0em;font-family:monospace,monospace;}
+div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; }
+table.tabular td p{margin-top:0em;}
+table.tabular {margin-left: auto; margin-right: auto;}
+td p:first-child{ margin-top:0em; }
+td p:last-child{ margin-bottom:0em; }
+div.td00{ margin-left:0pt; margin-right:0pt; }
+div.td01{ margin-left:0pt; margin-right:5pt; }
+div.td10{ margin-left:5pt; margin-right:0pt; }
+div.td11{ margin-left:5pt; margin-right:5pt; }
+table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+td.td00{ padding-left:0pt; padding-right:0pt; }
+td.td01{ padding-left:0pt; padding-right:5pt; }
+td.td10{ padding-left:5pt; padding-right:0pt; }
+td.td11{ padding-left:5pt; padding-right:5pt; }
+table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+.hline hr, .cline hr{ height : 0px; margin:0px; }
+.hline td, .cline td{ padding: 0; }
+.hline hr, .cline hr{border:none;border-top:1px solid black;}
+.hline {border-top: 1px solid black;}
+div.array {text-align:center;}
+table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+table.longtable{border-collapse: collapse; border-spacing: 0;}
+div.longtable{text-align:center;}
+table.longtable{margin-left:auto; margin-right: auto;}
+dl.enumerate-enumitem{display:grid; grid-template-columns: 3ch 1fr;}
+.uline{ text-decoration:underline; }
+.uuline{ text-decoration:underline; }
+span.sout {text-decoration: line-through }
+span.xout {text-decoration: line-through }
+span.uwave {text-decoration:underline }
+body { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; }
+h1 { color:#446CAA; font-size:150%; }
+h2 { color:#446CAA; font-size:140%; }
+h3 { color:#446CAA; font-size:130%; }
+h4 { color:#446CAA; font-size:120%; }
+h5 { color:#446CAA; font-size:110%; }
+h6 { color:#446CAA; font-size:100%; }
+table.tabular { margin-left: 0em; }
+dt { margin-top: 0.5em; }
+div.lstlisting, div.lstinputlisting {font-family: Courier New, monospace; white-space: nowrap; margin-top:0.5em; margin-bottom:0.5em; padding: 5px; border: 1px solid black; color: black; background-color: #F5F5F5;}
+span#textcolor1{color:#009900}
+span#textcolor2{color:#009900}
+span#textcolor3{color:#009900}
+span#textcolor4{color:#009900}
+span#textcolor5{color:#009900}
+span#textcolor6{color:#009900}
+span#textcolor7{color:#009900}
+span#textcolor8{color:#009900}
+span#textcolor9{color:#009900}
+span#textcolor10{color:#009900}
+span#textcolor11{color:#009900}
+span#textcolor12{color:#009900}
+span#textcolor13{color:#009900}
+span#textcolor14{color:#009900}
+span#textcolor15{color:#009900}
+span#textcolor16{color:#009900}
+span#textcolor17{color:#009900}
+span#textcolor18{color:#009900}
+span#textcolor19{color:#009900}
+span#textcolor20{color:#009900}
+span#textcolor21{color:#009900}
+span#textcolor22{color:#009900}
+span#textcolor23{color:#009900}
+span#textcolor24{color:#009900}
+span#textcolor25{color:#009900}
+span#textcolor26{color:#009900}
+span#textcolor27{color:#009900}
+span#textcolor28{color:#009900}
+span#textcolor29{color:#009900}
+span#textcolor30{color:#009900}
+span#textcolor31{color:#009900}
+span#textcolor32{color:#009900}
+span#textcolor33{color:#009900}
+span#textcolor34{color:#009900}
+span#textcolor35{color:#009900}
+span#textcolor36{color:#009900}
+span#textcolor37{color:#009900}
+span#textcolor38{color:#009900}
+#TBL-4-1{border-left: 1px solid black;}
+#TBL-4-1{border-right:1px solid black;}
+#TBL-4-2{border-right:1px solid black;}
+#TBL-4-3{border-right:1px solid black;}
+#TBL-5-1{border-left: 1px solid black;}
+#TBL-5-1{border-right:1px solid black;}
+#TBL-5-2{border-right:1px solid black;}
+#TBL-5-3{border-right:1px solid black;}
+span#textcolor39{color:#FF0000}
+span#textcolor40{color:#009900}
+span#textcolor41{color:#FF0000}
+span#textcolor42{color:#009900}
+#TBL-6-1{border-left: 1px solid black;}
+#TBL-6-1{border-right:1px solid black;}
+#TBL-6-2{border-right:1px solid black;}
+#TBL-6-3{border-right:1px solid black;}
+span#textcolor43{color:#009900}
+span#textcolor44{color:#009900}
+span#textcolor45{color:#009900}
+span#textcolor46{color:#009900}
+#TBL-8-1{border-left: 1px solid black;}
+#TBL-8-1{border-right:1px solid black;}
+#TBL-8-1{border-right:1px solid black;}
+#TBL-8-2{border-right:1px solid black;}
+#TBL-8-3{border-right:1px solid black;}
+span#textcolor74{color:#FF0000}
+span#textcolor75{color:#FF0000}
+span#textcolor76{color:#FF0000}
+span#textcolor77{color:#FF0000}
+span#textcolor78{color:#FF0000}
+span#textcolor79{color:#009900}
+span#textcolor80{color:#009900}
+span#textcolor81{color:#009900}
+span#textcolor82{color:#009900}
+span#textcolor83{color:#009900}
+span#textcolor84{color:#009900}
+span#textcolor85{color:#009900}
+span#textcolor86{color:#009900}
+span#textcolor87{color:#009900}
+span#textcolor88{color:#009900}
+span#textcolor89{color:#009900}
+span#textcolor90{color:#009900}
+span#textcolor91{color:#009900}
+span#textcolor92{color:#009900}
+span#textcolor93{color:#009900}
+span#textcolor94{color:#009900}
+span#textcolor95{color:#009900}
+span#textcolor96{color:#009900}
+span#textcolor97{color:#009900}
+span#textcolor98{color:#009900}
+span#textcolor99{color:#009900}
+span#textcolor100{color:#009900}
+#TBL-9-1{border-left: 1px solid black;}
+#TBL-9-1{border-right:1px solid black;}
+#TBL-9-2{border-right:1px solid black;}
+#TBL-9-3{border-right:1px solid black;}
+span#textcolor101{color:#009900}
+span#textcolor102{color:#009900}
+span#textcolor103{color:#009900}
+span#textcolor104{color:#009900}
+span#textcolor105{color:#009900}
+span#textcolor106{color:#009900}
+span#textcolor107{color:#009900}
+span#textcolor108{color:#009900}
+span#textcolor109{color:#009900}
+#TBL-12-1{border-left: 1px solid black;}
+#TBL-12-1{border-right:1px solid black;}
+#TBL-12-1{border-right:1px solid black;}
+#TBL-12-2{border-right:1px solid black;}
+#TBL-12-3{border-right:1px solid black;}
+span#textcolor110{color:#FF0000}
+span#textcolor111{color:#009900}
+span#textcolor112{color:#FF0000}
+span#textcolor113{color:#009900}
+span#textcolor114{color:#FF0000}
+span#textcolor115{color:#009900}
+span#textcolor116{color:#FF0000}
+span#textcolor117{color:#009900}
+span#textcolor118{color:#FF0000}
+span#textcolor119{color:#009900}
+span#textcolor120{color:#FF0000}
+span#textcolor121{color:#009900}
+span#textcolor122{color:#FF0000}
+span#textcolor123{color:#009900}
+span#textcolor124{color:#FF0000}
+span#textcolor125{color:#009900}
+span#textcolor126{color:#FF0000}
+span#textcolor127{color:#009900}
+span#textcolor128{color:#009900}
+span#textcolor129{color:#009900}
+span#textcolor130{color:#009900}
+span#textcolor131{color:#009900}
+span#textcolor132{color:#009900}
+span#textcolor133{color:#009900}
+span#textcolor134{color:#009900}
+#TBL-15-1{border-left: 1px solid black;}
+#TBL-15-1{border-right:1px solid black;}
+#TBL-15-2{border-right:1px solid black;}
+span#textcolor151{color:#009900}
+span#textcolor152{color:#009900}
+span#textcolor153{color:#009900}
+span#textcolor154{color:#009900}
+span#textcolor155{color:#009900}
+span#textcolor156{color:#009900}
+span#textcolor157{color:#009900}
+span#textcolor158{color:#009900}
+span#textcolor159{color:#009900}
+span#textcolor160{color:#009900}
+#TBL-18-1{border-left: 1px solid black;}
+#TBL-18-1{border-right:1px solid black;}
+#TBL-18-2{border-right:1px solid black;}
+#TBL-18-3{border-right:1px solid black;}
+span#textcolor177{color:#009900}
+span#textcolor178{color:#009900}
+span#textcolor179{color:#009900}
+span#textcolor180{color:#009900}
+span#textcolor181{color:#009900}
+span#textcolor182{color:#009900}
+span#textcolor183{color:#009900}
+span#textcolor184{color:#009900}
+span#textcolor185{color:#009900}
+span#textcolor186{color:#009900}
+span#textcolor187{color:#009900}
+span#textcolor188{color:#009900}
+span#textcolor189{color:#009900}
+span#textcolor190{color:#009900}
+span#textcolor191{color:#009900}
+span#textcolor192{color:#009900}
+span#textcolor193{color:#009900}
+span#textcolor194{color:#009900}
+span#textcolor195{color:#009900}
+span#textcolor196{color:#009900}
+span#textcolor197{color:#009900}
+span#textcolor198{color:#009900}
+span#textcolor199{color:#009900}
+span#textcolor200{color:#009900}
+span#textcolor201{color:#009900}
+span#textcolor202{color:#009900}
+span#textcolor203{color:#009900}
+span#textcolor204{color:#009900}
+span#textcolor205{color:#009900}
+span#textcolor206{color:#009900}
+span#textcolor207{color:#009900}
+span#textcolor208{color:#009900}
+span#textcolor209{color:#009900}
+span#textcolor210{color:#009900}
+span#textcolor211{color:#009900}
+span#textcolor212{color:#009900}
+span#textcolor213{color:#009900}
+span#textcolor214{color:#009900}
+span#textcolor215{color:#009900}
+span#textcolor216{color:#009900}
+span#textcolor217{color:#009900}
+span#textcolor218{color:#009900}
+span#textcolor219{color:#009900}
+span#textcolor220{color:#009900}
+span#textcolor221{color:#009900}
+span#textcolor222{color:#009900}
+span#textcolor223{color:#009900}
+span#textcolor224{color:#009900}
+span#textcolor225{color:#009900}
+span#textcolor226{color:#009900}
+span#textcolor227{color:#009900}
+span#textcolor228{color:#009900}
+span#textcolor229{color:#009900}
+span#textcolor230{color:#009900}
+span#textcolor231{color:#009900}
+span#textcolor232{color:#009900}
+#TBL-19-1{border-left: 1px solid black;}
+#TBL-19-1{border-right:1px solid black;}
+#TBL-19-2{border-right:1px solid black;}
+span#textcolor233{color:#009900}
+span#textcolor234{color:#009900}
+span#textcolor235{color:#009900}
+span#textcolor236{color:#009900}
+span#textcolor237{color:#009900}
+span#textcolor238{color:#009900}
+span#textcolor239{color:#009900}
+span#textcolor240{color:#009900}
+span#textcolor241{color:#009900}
+#TBL-22-1{border-left: 1px solid black;}
+#TBL-22-1{border-right:1px solid black;}
+#TBL-22-1{border-right:1px solid black;}
+#TBL-22-2{border-right:1px solid black;}
+#TBL-22-3{border-right:1px solid black;}
+span#textcolor260{color:#009900}
+span#textcolor261{color:#009900}
+span#textcolor262{color:#009900}
+span#textcolor263{color:#009900}
+span#textcolor264{color:#009900}
+span#textcolor265{color:#009900}
+span#textcolor266{color:#009900}
+span#textcolor267{color:#009900}
+span#textcolor268{color:#009900}
+span#textcolor269{color:#009900}
+span#textcolor270{color:#009900}
+span#textcolor271{color:#009900}
+span#textcolor272{color:#009900}
+span#textcolor273{color:#009900}
+span#textcolor274{color:#009900}
+span#textcolor275{color:#009900}
+span#textcolor276{color:#009900}
+span#textcolor277{color:#009900}
+span#textcolor278{color:#009900}
+span#textcolor279{color:#009900}
+span#textcolor280{color:#009900}
+span#textcolor281{color:#009900}
+span#textcolor282{color:#009900}
+span#textcolor283{color:#009900}
+span#textcolor284{color:#009900}
+span#textcolor285{color:#009900}
+span#textcolor286{color:#009900}
+span#textcolor287{color:#009900}
+span#textcolor288{color:#009900}
+span#textcolor289{color:#009900}
+span#textcolor290{color:#009900}
+span#textcolor291{color:#009900}
+span#textcolor292{color:#009900}
+span#textcolor293{color:#009900}
+span#textcolor294{color:#009900}
+span#textcolor295{color:#009900}
+span#textcolor296{color:#009900}
+span#textcolor297{color:#009900}
+span#textcolor298{color:#009900}
+span#textcolor299{color:#009900}
+span#textcolor300{color:#009900}
+span#textcolor301{color:#009900}
+span#textcolor302{color:#009900}
+span#textcolor303{color:#009900}
+span#textcolor304{color:#009900}
+span#textcolor305{color:#009900}
+span#textcolor306{color:#009900}
+span#textcolor307{color:#009900}
+span#textcolor308{color:#009900}
+span#textcolor309{color:#009900}
+span#textcolor310{color:#009900}
+span#textcolor311{color:#009900}
+span#textcolor312{color:#009900}
+span#textcolor313{color:#009900}
+span#textcolor314{color:#009900}
+span#textcolor315{color:#009900}
+span#textcolor316{color:#009900}
+span#textcolor317{color:#009900}
+span#textcolor318{color:#009900}
+span#textcolor319{color:#009900}
+span#textcolor320{color:#009900}
+span#textcolor321{color:#009900}
+span#textcolor322{color:#009900}
+span#textcolor323{color:#009900}
+span#textcolor324{color:#009900}
+span#textcolor325{color:#009900}
+span#textcolor326{color:#009900}
+span#textcolor327{color:#009900}
+span#textcolor328{color:#009900}
+span#textcolor329{color:#009900}
+span#textcolor330{color:#009900}
+span#textcolor331{color:#009900}
+span#textcolor332{color:#009900}
+span#textcolor333{color:#009900}
+span#textcolor334{color:#009900}
+span#textcolor335{color:#009900}
+span#textcolor336{color:#009900}
+span#textcolor337{color:#009900}
+span#textcolor338{color:#009900}
+span#textcolor339{color:#009900}
+span#textcolor340{color:#009900}
+span#textcolor341{color:#009900}
+span#textcolor342{color:#009900}
+span#textcolor343{color:#009900}
+span#textcolor344{color:#009900}
+span#textcolor345{color:#009900}
+span#textcolor346{color:#009900}
+span#textcolor347{color:#009900}
+span#textcolor348{color:#009900}
+span#textcolor349{color:#009900}
+span#textcolor350{color:#009900}
+span#textcolor351{color:#009900}
+span#textcolor352{color:#009900}
+span#textcolor353{color:#009900}
+span#textcolor354{color:#009900}
+span#textcolor355{color:#009900}
+span#textcolor356{color:#009900}
+span#textcolor357{color:#009900}
+span#textcolor358{color:#009900}
+span#textcolor359{color:#009900}
+span#textcolor360{color:#009900}
+span#textcolor361{color:#009900}
+span#textcolor362{color:#009900}
+span#textcolor363{color:#009900}
+span#textcolor364{color:#009900}
+span#textcolor365{color:#009900}
+span#textcolor366{color:#009900}
+span#textcolor367{color:#009900}
+#TBL-25-1{border-left: 1px solid black;}
+#TBL-25-1{border-right:1px solid black;}
+#TBL-25-2{border-right:1px solid black;}
+#TBL-25-3{border-right:1px solid black;}
+span#textcolor410{color:#009900}
+span#textcolor411{color:#009900}
+span#textcolor412{color:#009900}
+span#textcolor413{color:#009900}
+span#textcolor414{color:#009900}
+span#textcolor415{color:#009900}
+span#textcolor416{color:#009900}
+span#textcolor417{color:#009900}
+span#textcolor418{color:#009900}
+span#textcolor419{color:#009900}
+span#textcolor420{color:#009900}
+span#textcolor421{color:#009900}
+span#textcolor422{color:#009900}
+span#textcolor423{color:#009900}
+span#textcolor424{color:#009900}
+span#textcolor425{color:#009900}
+span#textcolor426{color:#009900}
+span#textcolor427{color:#009900}
+span#textcolor428{color:#009900}
+span#textcolor429{color:#009900}
+span#textcolor430{color:#009900}
+span#textcolor431{color:#009900}
+span#textcolor432{color:#009900}
+span#textcolor433{color:#009900}
+span#textcolor434{color:#009900}
+span#textcolor435{color:#009900}
+span#textcolor436{color:#009900}
+span#textcolor437{color:#009900}
+span#textcolor438{color:#009900}
+span#textcolor439{color:#009900}
+span#textcolor440{color:#009900}
+span#textcolor441{color:#009900}
+span#textcolor442{color:#009900}
+span#textcolor443{color:#009900}
+span#textcolor444{color:#009900}
+span#textcolor445{color:#009900}
+span#textcolor446{color:#009900}
+span#textcolor447{color:#009900}
+span#textcolor448{color:#009900}
+span#textcolor449{color:#009900}
+span#textcolor450{color:#009900}
+span#textcolor451{color:#009900}
+span#textcolor452{color:#009900}
+span#textcolor453{color:#009900}
+span#textcolor454{color:#009900}
+span#textcolor455{color:#009900}
+span#textcolor456{color:#009900}
+span#textcolor457{color:#009900}
+span#textcolor458{color:#009900}
+span#textcolor459{color:#009900}
+span#textcolor460{color:#009900}
+span#textcolor461{color:#009900}
+span#textcolor462{color:#009900}
+span#textcolor463{color:#009900}
+span#textcolor464{color:#009900}
+span#textcolor465{color:#009900}
+span#textcolor466{color:#009900}
+span#textcolor467{color:#009900}
+span#textcolor468{color:#009900}
+span#textcolor469{color:#009900}
+span#textcolor470{color:#009900}
+span#textcolor471{color:#009900}
+span#textcolor472{color:#009900}
+span#textcolor473{color:#009900}
+span#textcolor474{color:#009900}
+span#textcolor475{color:#009900}
+span#textcolor476{color:#009900}
+span#textcolor477{color:#009900}
+span#textcolor478{color:#009900}
+span#textcolor479{color:#009900}
+span#textcolor480{color:#009900}
+span#textcolor481{color:#009900}
+span#textcolor482{color:#009900}
+span#textcolor483{color:#009900}
+span#textcolor484{color:#009900}
+span#textcolor485{color:#009900}
+span#textcolor486{color:#009900}
+span#textcolor487{color:#009900}
+span#textcolor488{color:#009900}
+span#textcolor489{color:#009900}
+span#textcolor490{color:#009900}
+span#textcolor491{color:#009900}
+span#textcolor492{color:#009900}
+span#textcolor493{color:#009900}
+#TBL-28-1{border-left: 1px solid black;}
+#TBL-28-1{border-right:1px solid black;}
+#TBL-28-1{border-right:1px solid black;}
+#TBL-28-2{border-right:1px solid black;}
+#TBL-28-3{border-right:1px solid black;}
+span#textcolor542{color:#009900}
+span#textcolor543{color:#009900}
+span#textcolor544{color:#009900}
+span#textcolor545{color:#009900}
+span#textcolor546{color:#009900}
+span#textcolor547{color:#009900}
+span#textcolor548{color:#009900}
+span#textcolor549{color:#009900}
+span#textcolor550{color:#009900}
+span#textcolor551{color:#009900}
+span#textcolor552{color:#009900}
+span#textcolor553{color:#009900}
+span#textcolor554{color:#009900}
+span#textcolor555{color:#009900}
+span#textcolor556{color:#009900}
+span#textcolor557{color:#009900}
+span#textcolor558{color:#009900}
+span#textcolor559{color:#009900}
+span#textcolor560{color:#009900}
+span#textcolor561{color:#009900}
+span#textcolor562{color:#009900}
+span#textcolor563{color:#009900}
+span#textcolor564{color:#009900}
+span#textcolor565{color:#009900}
+span#textcolor566{color:#009900}
+span#textcolor567{color:#009900}
+span#textcolor568{color:#009900}
+span#textcolor569{color:#009900}
+span#textcolor570{color:#009900}
+span#textcolor571{color:#009900}
+span#textcolor572{color:#009900}
+span#textcolor573{color:#009900}
+span#textcolor574{color:#009900}
+span#textcolor575{color:#009900}
+span#textcolor576{color:#009900}
+span#textcolor577{color:#009900}
+span#textcolor578{color:#009900}
+span#textcolor579{color:#009900}
+span#textcolor580{color:#009900}
+span#textcolor581{color:#009900}
+span#textcolor582{color:#009900}
+span#textcolor583{color:#009900}
+span#textcolor584{color:#009900}
+span#textcolor585{color:#009900}
+span#textcolor586{color:#009900}
+span#textcolor587{color:#009900}
+span#textcolor588{color:#009900}
+span#textcolor589{color:#009900}
+span#textcolor590{color:#009900}
+span#textcolor591{color:#009900}
+#TBL-29-1{border-left: 1px solid black;}
+#TBL-29-1{border-right:1px solid black;}
+#TBL-29-2{border-right:1px solid black;}
+#TBL-30-1{border-left: 1px solid black;}
+#TBL-30-1{border-right:1px solid black;}
+#TBL-30-1{border-right:1px solid black;}
+#TBL-30-2{border-right:1px solid black;}
+#TBL-30-3{border-right:1px solid black;}
+#TBL-30-4{border-right:1px solid black;}
+#TBL-33-1{border-left: 1px solid black;}
+#TBL-33-1{border-right:1px solid black;}
+#TBL-33-1{border-right:1px solid black;}
+#TBL-33-2{border-right:1px solid black;}
+#TBL-33-3{border-right:1px solid black;}
+#TBL-33-4{border-right:1px solid black;}
+#TBL-33-5{border-right:1px solid black;}
+#TBL-33-6{border-right:1px solid black;}
+#TBL-33-7{border-right:1px solid black;}
+#TBL-33-8{border-right:1px solid black;}
+#TBL-33-9{border-right:1px solid black;}
+#TBL-34-1{border-left: 1px solid black;}
+#TBL-34-1{border-right:1px solid black;}
+#TBL-34-1{border-right:1px solid black;}
+#TBL-34-2{border-right:1px solid black;}
+#TBL-34-3{border-right:1px solid black;}
+#TBL-35-1{border-left: 1px solid black;}
+#TBL-35-1{border-right:1px solid black;}
+#TBL-35-1{border-right:1px solid black;}
+#TBL-35-2{border-right:1px solid black;}
+#TBL-35-3{border-right:1px solid black;}
+#TBL-38-1{border-left: 1px solid black;}
+#TBL-38-1{border-right:1px solid black;}
+#TBL-38-2{border-right:1px solid black;}
+#TBL-38-3{border-right:1px solid black;}
+#TBL-39-1{border-left: 1px solid black;}
+#TBL-39-1{border-right:1px solid black;}
+#TBL-39-2{border-right:1px solid black;}
+#TBL-39-3{border-right:1px solid black;}
+#TBL-39-4{border-right:1px solid black;}
+#TBL-40-1{border-left: 1px solid black;}
+#TBL-40-1{border-right:1px solid black;}
+#TBL-40-2{border-right:1px solid black;}
+#TBL-40-3{border-right:1px solid black;}
+#TBL-41-1{border-left: 1px solid black;}
+#TBL-41-1{border-right:1px solid black;}
+#TBL-41-2{border-right:1px solid black;}
+span#textcolor592{color:#FF0000}
+span#textcolor593{color:#009900}
+span#textcolor594{color:#009900}
+span#textcolor595{color:#009900}
+span#textcolor596{color:#009900}
+span#textcolor597{color:#009900}
+span#textcolor598{color:#009900}
+span#textcolor599{color:#009900}
+span#textcolor600{color:#009900}
+span#textcolor601{color:#009900}
+span#textcolor602{color:#009900}
+span#textcolor603{color:#009900}
+span#textcolor604{color:#009900}
+span#textcolor605{color:#009900}
+#TBL-44-1{border-left: 1px solid black;}
+#TBL-44-1{border-right:1px solid black;}
+#TBL-44-1{border-right:1px solid black;}
+#TBL-44-2{border-right:1px solid black;}
+#TBL-44-3{border-right:1px solid black;}
+span#textcolor624{color:#009900}
+span#textcolor625{color:#009900}
+span#textcolor626{color:#009900}
+span#textcolor627{color:#009900}
+span#textcolor628{color:#009900}
+span#textcolor629{color:#009900}
+span#textcolor630{color:#009900}
+span#textcolor631{color:#009900}
+span#textcolor632{color:#009900}
+span#textcolor633{color:#009900}
+span#textcolor634{color:#009900}
+#TBL-47-1{border-left: 1px solid black;}
+#TBL-47-1{border-right:1px solid black;}
+#TBL-47-1{border-right:1px solid black;}
+#TBL-47-2{border-right:1px solid black;}
+#TBL-47-3{border-right:1px solid black;}
+span#textcolor653{color:#009900}
+span#textcolor654{color:#009900}
+span#textcolor655{color:#009900}
+span#textcolor656{color:#009900}
+span#textcolor657{color:#009900}
+span#textcolor658{color:#009900}
+span#textcolor659{color:#009900}
+span#textcolor660{color:#009900}
+span#textcolor661{color:#009900}
+span#textcolor662{color:#FF0000}
+span#textcolor663{color:#009900}
+span#textcolor664{color:#FF0000}
+span#textcolor665{color:#009900}
+span#textcolor666{color:#009900}
+span#textcolor667{color:#FF0000}
+span#textcolor668{color:#009900}
+span#textcolor669{color:#FF0000}
+span#textcolor670{color:#FF0000}
+span#textcolor671{color:#009900}
+span#textcolor672{color:#FF0000}
+span#textcolor673{color:#009900}
+span#textcolor674{color:#009900}
+span#textcolor675{color:#FF0000}
+span#textcolor676{color:#009900}
+span#textcolor677{color:#009900}
+span#textcolor678{color:#009900}
+span#textcolor679{color:#FF0000}
+span#textcolor680{color:#009900}
+span#textcolor681{color:#009900}
+span#textcolor682{color:#FF0000}
+span#textcolor683{color:#009900}
+span#textcolor684{color:#009900}
+span#textcolor685{color:#FF0000}
+span#textcolor686{color:#009900}
+span#textcolor687{color:#009900}
+span#textcolor688{color:#009900}
+span#textcolor689{color:#009900}
+span#textcolor690{color:#009900}
+span#textcolor691{color:#009900}
+span#textcolor692{color:#009900}
+span#textcolor693{color:#009900}
+span#textcolor694{color:#009900}
+span#textcolor695{color:#009900}
+span#textcolor696{color:#009900}
+span#textcolor697{color:#009900}
+span#textcolor698{color:#009900}
+span#textcolor699{color:#009900}
+span#textcolor700{color:#009900}
+span#textcolor701{color:#009900}
+span#textcolor702{color:#009900}
+span#textcolor703{color:#009900}
+span#textcolor704{color:#009900}
+span#textcolor705{color:#009900}
+span#textcolor706{color:#009900}
+span#textcolor707{color:#009900}
+span#textcolor708{color:#009900}
+span#textcolor709{color:#009900}
+span#textcolor710{color:#009900}
+span#textcolor711{color:#009900}
+span#textcolor712{color:#009900}
+span#textcolor713{color:#009900}
+span#textcolor714{color:#009900}
+span#textcolor715{color:#009900}
+span#textcolor716{color:#009900}
+span#textcolor717{color:#009900}
+span#textcolor718{color:#009900}
+span#textcolor719{color:#009900}
+span#textcolor720{color:#009900}
+span#textcolor721{color:#009900}
+span#textcolor722{color:#009900}
+span#textcolor723{color:#009900}
+span#textcolor724{color:#009900}
+span#textcolor725{color:#009900}
+span#textcolor726{color:#009900}
+span#textcolor727{color:#009900}
+span#textcolor728{color:#009900}
+span#textcolor729{color:#009900}
+span#textcolor730{color:#009900}
+span#textcolor731{color:#009900}
+span#textcolor732{color:#009900}
+span#textcolor733{color:#009900}
+span#textcolor734{color:#009900}
+span#textcolor735{color:#009900}
+span#textcolor736{color:#009900}
+span#textcolor737{color:#009900}
+span#textcolor738{color:#009900}
+span#textcolor739{color:#009900}
+span#textcolor740{color:#009900}
+span#textcolor741{color:#009900}
+span#textcolor742{color:#009900}
+span#textcolor743{color:#009900}
+span#textcolor744{color:#009900}
+span#textcolor745{color:#009900}
+span#textcolor746{color:#009900}
+span#textcolor747{color:#009900}
+span#textcolor748{color:#009900}
+span#textcolor749{color:#009900}
+span#textcolor750{color:#009900}
+span#textcolor751{color:#009900}
+span#textcolor752{color:#009900}
+span#textcolor753{color:#009900}
+span#textcolor754{color:#009900}
+span#textcolor755{color:#009900}
+span#textcolor756{color:#009900}
+span#textcolor757{color:#009900}
+span#textcolor758{color:#009900}
+span#textcolor759{color:#009900}
+span#textcolor760{color:#009900}
+span#textcolor761{color:#009900}
+span#textcolor762{color:#009900}
+span#textcolor763{color:#009900}
+span#textcolor764{color:#009900}
+span#textcolor765{color:#009900}
+span#textcolor766{color:#009900}
+span#textcolor767{color:#009900}
+span#textcolor768{color:#009900}
+span#textcolor769{color:#009900}
+span#textcolor770{color:#009900}
+span#textcolor771{color:#009900}
+span#textcolor772{color:#009900}
+span#textcolor773{color:#009900}
+span#textcolor774{color:#009900}
+span#textcolor775{color:#009900}
+span#textcolor776{color:#009900}
+span#textcolor777{color:#009900}
+span#textcolor778{color:#009900}
+span#textcolor779{color:#009900}
+span#textcolor780{color:#009900}
+span#textcolor781{color:#009900}
+span#textcolor782{color:#009900}
+span#textcolor783{color:#009900}
+span#textcolor784{color:#009900}
+span#textcolor785{color:#009900}
+span#textcolor786{color:#009900}
+span#textcolor787{color:#009900}
+span#textcolor788{color:#009900}
+span#textcolor789{color:#009900}
+span#textcolor790{color:#009900}
+span#textcolor791{color:#009900}
+span#textcolor792{color:#009900}
+span#textcolor793{color:#009900}
+span#textcolor794{color:#009900}
+span#textcolor795{color:#009900}
+span#textcolor796{color:#009900}
+span#textcolor797{color:#009900}
+span#textcolor798{color:#009900}
+span#textcolor799{color:#009900}
+span#textcolor800{color:#009900}
+span#textcolor801{color:#009900}
+span#textcolor802{color:#009900}
+span#textcolor803{color:#009900}
+span#textcolor804{color:#009900}
+span#textcolor805{color:#009900}
+span#textcolor806{color:#009900}
+span#textcolor807{color:#009900}
+span#textcolor808{color:#009900}
+span#textcolor809{color:#009900}
+span#textcolor810{color:#009900}
+span#textcolor811{color:#009900}
+span#textcolor812{color:#009900}
+span#textcolor813{color:#009900}
+span#textcolor814{color:#009900}
+span#textcolor815{color:#009900}
+span#textcolor816{color:#009900}
+span#textcolor817{color:#009900}
+span#textcolor818{color:#009900}
+span#textcolor819{color:#009900}
+span#textcolor820{color:#009900}
+span#textcolor821{color:#009900}
+span#textcolor822{color:#009900}
+span#textcolor823{color:#009900}
+span#textcolor824{color:#009900}
+span#textcolor825{color:#009900}
+span#textcolor826{color:#009900}
+span#textcolor827{color:#009900}
+span#textcolor828{color:#009900}
+span#textcolor829{color:#009900}
+span#textcolor830{color:#009900}
+span#textcolor831{color:#009900}
+span#textcolor832{color:#009900}
+span#textcolor833{color:#009900}
+span#textcolor834{color:#009900}
+span#textcolor835{color:#009900}
+span#textcolor836{color:#009900}
+span#textcolor837{color:#009900}
+span#textcolor838{color:#009900}
+span#textcolor839{color:#009900}
+span#textcolor840{color:#009900}
+span#textcolor841{color:#009900}
+span#textcolor842{color:#009900}
+span#textcolor843{color:#009900}
+span#textcolor844{color:#009900}
+span#textcolor845{color:#009900}
+span#textcolor846{color:#009900}
+span#textcolor847{color:#009900}
+span#textcolor848{color:#009900}
+span#textcolor849{color:#009900}
+span#textcolor850{color:#009900}
+span#textcolor851{color:#009900}
+span#textcolor852{color:#009900}
+span#textcolor853{color:#009900}
+span#textcolor854{color:#009900}
+span#textcolor855{color:#009900}
+span#textcolor856{color:#009900}
+span#textcolor857{color:#009900}
+span#textcolor858{color:#009900}
+span#textcolor859{color:#009900}
+span#textcolor860{color:#009900}
+span#textcolor861{color:#009900}
+span#textcolor862{color:#009900}
+span#textcolor863{color:#009900}
+span#textcolor864{color:#009900}
+span#textcolor865{color:#009900}
+span#textcolor866{color:#009900}
+span#textcolor867{color:#009900}
+span#textcolor868{color:#009900}
+span#textcolor869{color:#009900}
+span#textcolor870{color:#009900}
+span#textcolor871{color:#009900}
+span#textcolor872{color:#009900}
+span#textcolor873{color:#009900}
+span#textcolor874{color:#009900}
+span#textcolor875{color:#009900}
+span#textcolor876{color:#009900}
+span#textcolor877{color:#009900}
+span#textcolor878{color:#009900}
+span#textcolor879{color:#009900}
+span#textcolor880{color:#009900}
+span#textcolor881{color:#009900}
+span#textcolor882{color:#009900}
+span#textcolor883{color:#009900}
+#TBL-50-1{border-left: 1px solid black;}
+#TBL-50-1{border-right:1px solid black;}
+#TBL-50-2{border-right:1px solid black;}
+#TBL-50-3{border-right:1px solid black;}
+span#textcolor930{color:#009900}
+span#textcolor931{color:#009900}
+span#textcolor932{color:#009900}
+span#textcolor933{color:#009900}
+span#textcolor934{color:#009900}
+span#textcolor935{color:#009900}
+span#textcolor936{color:#009900}
+span#textcolor937{color:#009900}
+span#textcolor938{color:#009900}
+span#textcolor939{color:#009900}
+span#textcolor940{color:#009900}
+span#textcolor941{color:#009900}
+span#textcolor942{color:#009900}
+span#textcolor943{color:#009900}
+span#textcolor944{color:#009900}
+span#textcolor945{color:#009900}
+span#textcolor946{color:#009900}
+span#textcolor947{color:#009900}
+span#textcolor948{color:#009900}
+span#textcolor949{color:#009900}
+span#textcolor950{color:#009900}
+span#textcolor951{color:#009900}
+span#textcolor952{color:#009900}
+span#textcolor953{color:#009900}
+span#textcolor954{color:#009900}
+span#textcolor955{color:#009900}
+span#textcolor956{color:#009900}
+span#textcolor957{color:#009900}
+span#textcolor958{color:#009900}
+span#textcolor959{color:#009900}
+span#textcolor960{color:#009900}
+span#textcolor961{color:#009900}
+#TBL-53-1{border-left: 1px solid black;}
+#TBL-53-1{border-right:1px solid black;}
+#TBL-53-2{border-right:1px solid black;}
+#TBL-53-3{border-right:1px solid black;}
+span#textcolor990{color:#009900}
+span#textcolor991{color:#009900}
+span#textcolor992{color:#009900}
+span#textcolor993{color:#009900}
+span#textcolor994{color:#009900}
+span#textcolor995{color:#009900}
+span#textcolor996{color:#009900}
+span#textcolor997{color:#009900}
+span#textcolor998{color:#009900}
+span#textcolor999{color:#009900}
+span#textcolor1000{color:#009900}
+span#textcolor1001{color:#009900}
+span#textcolor1002{color:#009900}
+span#textcolor1003{color:#009900}
+span#textcolor1004{color:#009900}
+span#textcolor1005{color:#009900}
+span#textcolor1006{color:#009900}
+span#textcolor1007{color:#009900}
+span#textcolor1008{color:#009900}
+span#textcolor1009{color:#009900}
+span#textcolor1010{color:#009900}
+span#textcolor1011{color:#009900}
+span#textcolor1012{color:#009900}
+span#textcolor1013{color:#009900}
+span#textcolor1014{color:#009900}
+span#textcolor1015{color:#009900}
+span#textcolor1016{color:#009900}
+span#textcolor1017{color:#009900}
+span#textcolor1018{color:#009900}
+span#textcolor1019{color:#009900}
+span#textcolor1020{color:#009900}
+span#textcolor1021{color:#009900}
+span#textcolor1022{color:#009900}
+span#textcolor1023{color:#009900}
+span#textcolor1024{color:#009900}
+span#textcolor1025{color:#009900}
+span#textcolor1026{color:#009900}
+span#textcolor1027{color:#009900}
+span#textcolor1028{color:#009900}
+span#textcolor1029{color:#009900}
+span#textcolor1030{color:#009900}
+span#textcolor1031{color:#009900}
+span#textcolor1032{color:#009900}
+span#textcolor1033{color:#009900}
+span#textcolor1034{color:#009900}
+span#textcolor1035{color:#009900}
+span#textcolor1036{color:#009900}
+span#textcolor1037{color:#009900}
+span#textcolor1038{color:#009900}
+span#textcolor1039{color:#009900}
+span#textcolor1040{color:#009900}
+span#textcolor1041{color:#009900}
+span#textcolor1042{color:#009900}
+span#textcolor1043{color:#009900}
+span#textcolor1044{color:#009900}
+span#textcolor1045{color:#009900}
+span#textcolor1046{color:#009900}
+span#textcolor1047{color:#009900}
+span#textcolor1048{color:#009900}
+span#textcolor1049{color:#009900}
+span#textcolor1050{color:#009900}
+span#textcolor1051{color:#009900}
+span#textcolor1052{color:#009900}
+span#textcolor1053{color:#009900}
+span#textcolor1054{color:#009900}
+span#textcolor1055{color:#009900}
+span#textcolor1056{color:#009900}
+span#textcolor1057{color:#009900}
+span#textcolor1058{color:#009900}
+span#textcolor1059{color:#009900}
+span#textcolor1060{color:#009900}
+span#textcolor1061{color:#009900}
+span#textcolor1062{color:#009900}
+span#textcolor1063{color:#009900}
+span#textcolor1064{color:#009900}
+span#textcolor1065{color:#009900}
+span#textcolor1066{color:#009900}
+span#textcolor1067{color:#009900}
+span#textcolor1068{color:#009900}
+span#textcolor1069{color:#009900}
+span#textcolor1070{color:#009900}
+span#textcolor1071{color:#009900}
+span#textcolor1072{color:#009900}
+span#textcolor1073{color:#009900}
+span#textcolor1074{color:#009900}
+span#textcolor1075{color:#009900}
+span#textcolor1076{color:#009900}
+span#textcolor1077{color:#009900}
+span#textcolor1078{color:#009900}
+span#textcolor1079{color:#009900}
+span#textcolor1080{color:#009900}
+span#textcolor1081{color:#009900}
+span#textcolor1082{color:#FF0000}
+span#textcolor1083{color:#009900}
+span#textcolor1084{color:#FF0000}
+span#textcolor1085{color:#009900}
+#TBL-54-1{border-left: 1px solid black;}
+#TBL-54-1{border-right:1px solid black;}
+#TBL-54-2{border-right:1px solid black;}
+#TBL-55-1{border-left: 1px solid black;}
+#TBL-55-1{border-right:1px solid black;}
+#TBL-55-1{border-right:1px solid black;}
+#TBL-55-2{border-right:1px solid black;}
+#TBL-55-3{border-right:1px solid black;}
+#TBL-55-4{border-right:1px solid black;}
+#TBL-55-5{border-right:1px solid black;}
+#TBL-55-6{border-right:1px solid black;}
+#TBL-55-7{border-right:1px solid black;}
+#TBL-55-8{border-right:1px solid black;}
+#TBL-55-9{border-right:1px solid black;}
+#TBL-55-10{border-right:1px solid black;}
+#TBL-55-11{border-right:1px solid black;}
+#TBL-55-12{border-right:1px solid black;}
+#TBL-55-13{border-right:1px solid black;}
+#TBL-55-14{border-right:1px solid black;}
+#TBL-55-15{border-right:1px solid black;}
+#TBL-55-16{border-right:1px solid black;}
+#TBL-55-17{border-right:1px solid black;}
+#TBL-56-1{border-left: 1px solid black;}
+#TBL-56-1{border-right:1px solid black;}
+#TBL-56-2{border-right:1px solid black;}
+#TBL-59-1{border-left: 1px solid black;}
+#TBL-59-1{border-right:1px solid black;}
+#TBL-59-1{border-right:1px solid black;}
+#TBL-59-2{border-right:1px solid black;}
+#TBL-59-3{border-right:1px solid black;}
+#TBL-59-4{border-right:1px solid black;}
+#TBL-62-1{border-left: 1px solid black;}
+#TBL-62-1{border-right:1px solid black;}
+#TBL-62-1{border-right:1px solid black;}
+#TBL-62-2{border-right:1px solid black;}
+#TBL-62-3{border-right:1px solid black;}
+#TBL-62-4{border-right:1px solid black;}
+#TBL-65-1{border-left: 1px solid black;}
+#TBL-65-1{border-right:1px solid black;}
+#TBL-65-1{border-right:1px solid black;}
+#TBL-65-2{border-right:1px solid black;}
+#TBL-65-3{border-right:1px solid black;}
+#TBL-65-4{border-right:1px solid black;}
+#TBL-68-1{border-left: 1px solid black;}
+#TBL-68-1{border-right:1px solid black;}
+#TBL-68-1{border-right:1px solid black;}
+#TBL-68-2{border-right:1px solid black;}
+#TBL-68-3{border-right:1px solid black;}
+#TBL-71-1{border-left: 1px solid black;}
+#TBL-71-1{border-right:1px solid black;}
+#TBL-71-1{border-right:1px solid black;}
+#TBL-71-2{border-right:1px solid black;}
+#TBL-71-3{border-right:1px solid black;}
+#TBL-71-4{border-right:1px solid black;}
+#TBL-74-1{border-left: 1px solid black;}
+#TBL-74-1{border-right:1px solid black;}
+#TBL-74-1{border-right:1px solid black;}
+#TBL-74-2{border-right:1px solid black;}
+#TBL-74-3{border-right:1px solid black;}
+#TBL-77-1{border-left: 1px solid black;}
+#TBL-77-1{border-right:1px solid black;}
+#TBL-77-1{border-right:1px solid black;}
+#TBL-77-2{border-right:1px solid black;}
+#TBL-77-3{border-right:1px solid black;}
+#TBL-77-4{border-right:1px solid black;}
+#TBL-80-1{border-left: 1px solid black;}
+#TBL-80-1{border-right:1px solid black;}
+#TBL-80-1{border-right:1px solid black;}
+#TBL-80-2{border-right:1px solid black;}
+#TBL-80-3{border-right:1px solid black;}
+#TBL-83-1{border-left: 1px solid black;}
+#TBL-83-1{border-right:1px solid black;}
+#TBL-83-1{border-right:1px solid black;}
+#TBL-83-2{border-right:1px solid black;}
+#TBL-83-3{border-right:1px solid black;}
+#TBL-83-4{border-right:1px solid black;}
+#TBL-86-1{border-left: 1px solid black;}
+#TBL-86-1{border-right:1px solid black;}
+#TBL-86-1{border-right:1px solid black;}
+#TBL-86-2{border-right:1px solid black;}
+#TBL-86-3{border-right:1px solid black;}
+#TBL-89-1{border-left: 1px solid black;}
+#TBL-89-1{border-right:1px solid black;}
+#TBL-89-1{border-right:1px solid black;}
+#TBL-89-2{border-right:1px solid black;}
+#TBL-89-3{border-right:1px solid black;}
+#TBL-89-4{border-right:1px solid black;}
+#TBL-92-1{border-left: 1px solid black;}
+#TBL-92-1{border-right:1px solid black;}
+#TBL-92-1{border-right:1px solid black;}
+#TBL-92-2{border-right:1px solid black;}
+#TBL-92-3{border-right:1px solid black;}
+span#textcolor1086{color:#009900}
+span#textcolor1087{color:#009900}
+span#textcolor1088{color:#009900}
+span#textcolor1089{color:#009900}
+span#textcolor1090{color:#009900}
+span#textcolor1091{color:#009900}
+span#textcolor1092{color:#009900}
+span#textcolor1093{color:#009900}
+span#textcolor1094{color:#009900}
+span#textcolor1095{color:#009900}
+span#textcolor1096{color:#009900}
+span#textcolor1097{color:#009900}
+span#textcolor1098{color:#009900}
+span#textcolor1099{color:#009900}
+span#textcolor1100{color:#009900}
+span#textcolor1101{color:#009900}
+span#textcolor1102{color:#009900}
+span#textcolor1103{color:#009900}
+span#textcolor1104{color:#009900}
+span#textcolor1105{color:#009900}
+span#textcolor1106{color:#009900}
+span#textcolor1107{color:#009900}
+span#textcolor1108{color:#009900}
+span#textcolor1109{color:#009900}
+span#textcolor1110{color:#009900}
+span#textcolor1111{color:#009900}
+span#textcolor1112{color:#009900}
+span#textcolor1113{color:#009900}
+span#textcolor1114{color:#009900}
+span#textcolor1115{color:#009900}
+span#textcolor1116{color:#009900}
+span#textcolor1117{color:#009900}
+span#textcolor1118{color:#009900}
+span#textcolor1119{color:#009900}
+span#textcolor1120{color:#009900}
+span#textcolor1121{color:#009900}
+span#textcolor1122{color:#009900}
+span#textcolor1123{color:#009900}
+span#textcolor1124{color:#009900}
+span#textcolor1125{color:#009900}
+span#textcolor1126{color:#009900}
+span#textcolor1127{color:#009900}
+span#textcolor1128{color:#009900}
+span#textcolor1129{color:#009900}
+span#textcolor1130{color:#009900}
+span#textcolor1131{color:#009900}
+span#textcolor1132{color:#009900}
+span#textcolor1133{color:#009900}
+span#textcolor1134{color:#009900}
+span#textcolor1135{color:#009900}
+span#textcolor1136{color:#009900}
+span#textcolor1137{color:#009900}
+span#textcolor1138{color:#009900}
+span#textcolor1139{color:#009900}
+span#textcolor1140{color:#009900}
+span#textcolor1141{color:#009900}
+span#textcolor1142{color:#009900}
+span#textcolor1143{color:#009900}
+span#textcolor1144{color:#009900}
+span#textcolor1145{color:#009900}
+span#textcolor1146{color:#009900}
+span#textcolor1147{color:#009900}
+span#textcolor1148{color:#009900}
+span#textcolor1149{color:#009900}
+span#textcolor1150{color:#009900}
+span#textcolor1151{color:#009900}
+span#textcolor1152{color:#009900}
+span#textcolor1153{color:#009900}
+span#textcolor1154{color:#009900}
+span#textcolor1155{color:#009900}
+span#textcolor1156{color:#009900}
+span#textcolor1157{color:#009900}
+span#textcolor1158{color:#009900}
+span#textcolor1159{color:#009900}
+span#textcolor1160{color:#009900}
+span#textcolor1161{color:#009900}
+span#textcolor1162{color:#009900}
+span#textcolor1163{color:#009900}
+span#textcolor1164{color:#009900}
+span#textcolor1165{color:#009900}
+span#textcolor1166{color:#009900}
+span#textcolor1167{color:#009900}
+span#textcolor1168{color:#009900}
+span#textcolor1169{color:#009900}
+span#textcolor1170{color:#009900}
+span#textcolor1171{color:#009900}
+span#textcolor1172{color:#009900}
+span#textcolor1173{color:#009900}
+span#textcolor1174{color:#009900}
+span#textcolor1175{color:#009900}
+span#textcolor1176{color:#009900}
+span#textcolor1177{color:#009900}
+span#textcolor1178{color:#009900}
+span#textcolor1179{color:#009900}
+span#textcolor1180{color:#009900}
+span#textcolor1181{color:#009900}
+span#textcolor1182{color:#009900}
+span#textcolor1183{color:#009900}
+span#textcolor1184{color:#009900}
+span#textcolor1185{color:#009900}
+span#textcolor1186{color:#009900}
+span#textcolor1187{color:#009900}
+span#textcolor1188{color:#009900}
+span#textcolor1189{color:#009900}
+span#textcolor1190{color:#009900}
+span#textcolor1191{color:#009900}
+span#textcolor1192{color:#009900}
+span#textcolor1193{color:#009900}
+span#textcolor1194{color:#009900}
+span#textcolor1195{color:#009900}
+span#textcolor1196{color:#009900}
+span#textcolor1197{color:#009900}
+span#textcolor1198{color:#009900}
+span#textcolor1199{color:#009900}
+span#textcolor1200{color:#009900}
+span#textcolor1201{color:#009900}
+span#textcolor1202{color:#009900}
+span#textcolor1203{color:#009900}
+span#textcolor1204{color:#009900}
+span#textcolor1205{color:#009900}
+span#textcolor1206{color:#009900}
+span#textcolor1207{color:#009900}
+span#textcolor1208{color:#009900}
+span#textcolor1209{color:#009900}
+span#textcolor1210{color:#009900}
+span#textcolor1211{color:#009900}
+span#textcolor1212{color:#009900}
+span#textcolor1213{color:#009900}
+span#textcolor1214{color:#009900}
+span#textcolor1215{color:#009900}
+span#textcolor1216{color:#009900}
+span#textcolor1217{color:#009900}
+span#textcolor1218{color:#009900}
+span#textcolor1219{color:#009900}
+span#textcolor1220{color:#FF0000}
+span#textcolor1221{color:#009900}
+span#textcolor1222{color:#009900}
+span#textcolor1223{color:#FF0000}
+span#textcolor1224{color:#009900}
+span#textcolor1225{color:#009900}
+span#textcolor1226{color:#009900}
+span#textcolor1227{color:#009900}
+span#textcolor1228{color:#009900}
+span#textcolor1229{color:#009900}
+span#textcolor1230{color:#009900}
+span#textcolor1231{color:#009900}
+span#textcolor1232{color:#009900}
+span#textcolor1233{color:#009900}
+span#textcolor1234{color:#009900}
+span#textcolor1235{color:#009900}
+span#textcolor1236{color:#009900}
+span#textcolor1237{color:#009900}
+span#textcolor1238{color:#009900}
+span#textcolor1239{color:#009900}
+span#textcolor1240{color:#009900}
+span#textcolor1241{color:#009900}
+span#textcolor1242{color:#009900}
+span#textcolor1243{color:#009900}
+span#textcolor1244{color:#009900}
+span#textcolor1245{color:#009900}
+span#textcolor1246{color:#009900}
+span#textcolor1247{color:#009900}
+span#textcolor1248{color:#009900}
+span#textcolor1249{color:#009900}
+span#textcolor1250{color:#009900}
+span#textcolor1251{color:#009900}
+span#textcolor1252{color:#009900}
+span#textcolor1253{color:#009900}
+span#textcolor1254{color:#009900}
+span#textcolor1255{color:#009900}
+span#textcolor1256{color:#009900}
+#TBL-93-1{border-left: 1px solid black;}
+#TBL-93-1{border-right:1px solid black;}
+#TBL-93-2{border-right:1px solid black;}
+#TBL-93-3{border-right:1px solid black;}
+#TBL-93-4{border-right:1px solid black;}
+/* end css.sty */
+
