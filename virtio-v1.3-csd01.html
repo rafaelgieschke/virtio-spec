@@ -932,9 +932,11 @@ href="#x1-8620008" id="QQ2-1-875">How to avoid device part duplication with exis
 <br /> <span class="sectionToc" >B.9 <a 
 href="#x1-8630009" id="QQ2-1-876">How to extend the existing device part definition?</a></span>
 <br /><span class="appendixToc" >C <a 
-href="#x1-864000C" id="QQ2-1-877">Acknowledgements</a></span>
+href="#x1-864000C" id="QQ2-1-877">Creating New Transports</a></span>
 <br /><span class="appendixToc" >D <a 
-href="#x1-869000D" id="QQ2-1-882">Revision History</a></span>
+href="#x1-865000D" id="QQ2-1-878">Acknowledgements</a></span>
+<br /><span class="appendixToc" >E <a 
+href="#x1-870000E" id="QQ2-1-883">Revision History</a></span>
                                                                   
 
                                                                   
@@ -7241,7 +7243,7 @@ to control the operation of the device, nor to stream data.
  id="x1-104001r102"></a>
 <h3 class="sectionHead"><span class="titlemark">2.11   </span> <a 
  id="x1-10500011"></a>Exporting Objects</h3>
-<!--l. 495--><p class="noindent" >When an object created by one virtio device needs to be shared with a seperate virtio
+<!--l. 495--><p class="noindent" >When an object created by one virtio device needs to be shared with a separate virtio
 device, the first device can export the object by generating a UUID which can then
 be passed to the second device to identify the object.
 <!--l. 500--><p class="noindent" >What constitutes an object, how to export objects, and how to import objects are
@@ -10359,6 +10361,7 @@ class="pcrr8t-x-x-80"> </span><span
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span 
+class="pcrr8t-x-x-80">struct</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">{</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
@@ -10510,11 +10513,11 @@ class="aeti-10">hdr_list_count.count </span>indicates an
 count of <span 
 class="aeti-10">struct virtio_dev_part_hdr </span>metadata entries that the device can provide when
 the <span 
-class="aeti-10">type </span>is set to VIRTIO_ADMIN_CMD_DEV_PARTS_METADATA_TYPE_HDR
+class="aeti-10">type </span>is set to VIRTIO_ADMIN_CMD_DEV_PARTS_METADATA_TYPE_LIST
 in a subsequent VIRTIO_ADMIN_CMD_DEV_PARTS_METADATA_GET
 command.
 <!--l. 158--><p class="noindent" >When <span 
-class="aeti-10">type </span>is set to VIRTIO_ADMIN_CMD_DEV_PARTS_METADATA_TYPE_HDR,
+class="aeti-10">type </span>is set to VIRTIO_ADMIN_CMD_DEV_PARTS_METADATA_TYPE_LIST,
 the device responds with <span 
 class="aeti-10">hdr_list</span>. <span 
 class="aeti-10">hdr_list </span>indicates the device parts metadata.
@@ -11224,7 +11227,7 @@ href="#x1-3007x6">[PCIe]</a>.
 administration commands. An owner device can have more than one administration
 virtqueue.
 <!--l. 493--><p class="noindent" >If VIRTIO_F_ADMIN_VQ has been negotiated, an owner device exposes
-one or more adminstration virtqueues. The number and locations of the
+one or more administration virtqueues. The number and locations of the
 administration virtqueues are exposed by the owner device in a transport specific
 manner.
                                                                   
@@ -12215,7 +12218,7 @@ part.
 <!--l. 508--><p class="noindent" ><h2 class="chapterHead"><hr><span class="titlemark">3</span> <a 
  id="x1-1540003"></a>General Initialization And Device Operation</h2>
 We start with an overview of device initialization, then expand on the details of the
-device and how each step is preformed. This section is best read along with the
+device and how each step is performed. This section is best read along with the
 bus-specific section which describes how to communicate with the specific
 device.
 <a 
@@ -33415,7 +33418,7 @@ things:
 <h5 class="subsubsectionHead"><span class="titlemark">5.7.6.5   </span> <a 
  id="x1-4750005"></a>Device Requirements: Device Operation: Command lifecycle and
 fencing</h5>
-<!--l. 169--><p class="noindent" >The device MAY process controlq commands asyncronously and return them to the
+<!--l. 169--><p class="noindent" >The device MAY process controlq commands asynchronously and return them to the
 driver before the processing is complete. If the driver needs to know when the
 processing is finished it can set the VIRTIO_GPU_FLAG_FENCE flag in the
 request. The device MUST finish the processing before returning the command
@@ -34505,7 +34508,7 @@ class="aeti-10">y</span>) describe how the displays are arranged (i.e. which
     is – for example – the left display).
     <!--l. 347--><p class="noindent" >The <span 
 class="aeti-10">enabled </span>field is set when the user enabled the display. It is roughly the same
-    as the connected state of a phyiscal display connector.
+    as the connected state of a physical display connector.
     </dd><dt class="description">
     <!--l. 351--><p class="noindent" >
 <span 
@@ -39703,13 +39706,13 @@ class="pcrr8t-x-x-80">};</span></span></pre>
 class="aeti-10">header </span>is a general header (see above).
 <!--l. 427--><p class="noindent" ><span 
 class="aeti-10">op_flf  </span>is the opcode (in <span 
-class="aeti-10">header</span>) specific fixed-length paramenters.
+class="aeti-10">header</span>) specific fixed-length parameters.
 <!--l. 429--><p class="noindent" ><span 
 class="aeti-10">flf_len </span>depends on the VIRTIO_CRYPTO_F_REVISION_1 feature bit (see
 below).
 <!--l. 431--><p class="noindent" ><span 
 class="aeti-10">op_vlf  </span>is the opcode (in <span 
-class="aeti-10">header</span>) specific variable-length paramenters.
+class="aeti-10">header</span>) specific variable-length parameters.
 <!--l. 433--><p class="noindent" ><span 
 class="aeti-10">vlf_len </span>is the size of the specific structure used.
 <span 
@@ -39916,7 +39919,7 @@ class="pcrr8t-x-x-80">};</span></span></pre>
  id="x1-512015r431"></a>
 <!--l. 509--><p class="noindent" ><h6 class="subparagraphHead"><span class="titlemark">5.9.7.2.1.1</span> <a 
  id="x1-5130001"></a>Session operation: HASH session</h6>
-The fixed-length paramenters of HASH session requests is as follows:
+The fixed-length parameters of HASH session requests is as follows:
 <!--l. 514-->
 <pre class="lstlisting" id="listing-186"><span class="label"><a 
  id="x1-513001r1"></a></span><span style="color:#000000"><span 
@@ -44617,7 +44620,7 @@ following structures:
     <!--l. 1385--><p class="noindent" >struct virtio_crypto_alg_chain_data_flf</li></ul>
 <!--l. 1388--><p class="noindent" >The length of <span 
 class="aeti-10">op_type_flf </span>is fixed to 40 bytes, the data of unused part (if has) will be
-ingored.
+ignored.
                                                                   
 
                                                                   
@@ -45970,7 +45973,7 @@ following structures:
     <!--l. 1535--><p class="noindent" >struct virtio_crypto_alg_chain_data_flf_stateless</li></ul>
 <!--l. 1538--><p class="noindent" >The length of <span 
 class="aeti-10">op_type_flf </span>is fixed to 72 bytes, the data of unused part (if has) will be
-ingored.
+ignored.
 <!--l. 1541--><p class="noindent" ><span 
 class="aeti-10">op_type_vlf </span>is the <span 
 class="aeti-10">op_type </span>specific parameters, it MUST starts with or be one of the
@@ -66494,12 +66497,46 @@ NOT be removed.
                                                                   
 <a 
  id="x1-863001r813"></a>
-<!--l. 4--><p class="noindent" ><h2 class="appendixHead"><span class="titlemark">Appendix C</span>. <a 
- id="x1-864000C"></a>Acknowledgements</h2>
+<!--l. 1--><p class="noindent" ><h2 class="appendixHead"><span class="titlemark">Appendix C</span>. <a 
+ id="x1-864000C"></a>Creating New Transports</h2>
+Devices and drivers utilize various transport methods to facilitate communication,
+such as PCI, MMIO, or Channel I/O. These transport methods determine aspects of
+the interaction between the device and the driver, including device discovery,
+capability exchange, interrupt handling, and data transfer. For instance, in a
+host/guest architecture, the host might expose a device to the guest via a virtual
+PCI bus, and the guest would use a PCI device driver to interface with the
+device.
+<!--l. 11--><p class="noindent" >This section outlines the mandatory requirements that a transport method
+implements.
+<!--l. 14--><p class="noindent" >A transport provides a mechanism to implement configuration space for the
+device.
+<!--l. 17--><p class="noindent" >A transport provides a mechanism for the driver to identify the device type.
+<!--l. 20--><p class="noindent" >A transport provides a mechanism for the driver to read the device’s FEATURES_OK
+and DEVICE_NEEDS_RESET status bits.
+<!--l. 23--><p class="noindent" >A transport provides a mechanism for the driver to modify the device’s
+status.
+<!--l. 26--><p class="noindent" >A transport provides a mechanism for the driver to read and modify the device’s
+feature bits.
+<!--l. 29--><p class="noindent" >A transport allows one or more virtqueues to be implemented by the device. The
+number of virtqueues is device specific and not specified by the transport.
+<!--l. 33--><p class="noindent" >A transport provides a mechanism for the driver to communicate virtqueue
+configuration and memory location to the device.
+<!--l. 36--><p class="noindent" >A transport provides a mechanism for the device to send device notifications to the
+driver, such as used buffer notifications.
+<!--l. 39--><p class="noindent" >A transport provides a mechanism for the driver to send driver notifications to the
+device, such as available buffer notifications.
+<!--l. 42--><p class="noindent" >A transport provides a mechanism for the driver to initiate a device reset.
+                                                                  
+
+                                                                  
+<a 
+ id="x1-864001r813"></a>
+<!--l. 4--><p class="noindent" ><h2 class="appendixHead"><span class="titlemark">Appendix D</span>. <a 
+ id="x1-865000D"></a>Acknowledgements</h2>
 The following individuals have participated in the creation of this specification and
 are gratefully acknowledged:
 <h4 class="likesubsectionHead"><a 
- id="x1-865000C"></a>Participants</h4>
+ id="x1-866000D"></a>Participants</h4>
 <!--l. 9--><p class="noindent" >Alvaro Karsz, SolidRun <br 
 class="newline" />Anton Yakovlev, OpenSynergy <br 
 class="newline" />Cornelia Huck, Red Hat <br 
@@ -66534,7 +66571,7 @@ class="newline" />
 <!--l. 40--><p class="noindent" >The following non-members have provided valuable feedback on this specification and
 are gratefully acknowledged:
 <h4 class="likesubsectionHead"><a 
- id="x1-866000C"></a>Reviewers</h4>
+ id="x1-867000D"></a>Reviewers</h4>
 <!--l. 44--><p class="noindent" >Damien Le Moal, Western Digital <br 
 class="newline" />Hans Holmberg, Western Digital <br 
 class="newline" />Hans Zhang, Alibaba <br 
@@ -66549,7 +66586,7 @@ class="newline" />
 <!--l. 56--><p class="noindent" >The following individuals have participated in the creation of previous versions of this
 specification and are gratefully acknowledged:
 <h4 class="likesubsectionHead"><a 
- id="x1-867000C"></a>Participants</h4>
+ id="x1-868000D"></a>Participants</h4>
 <!--l. 60--><p class="noindent" >Alexander Duyck, Intel <br 
 class="newline" />Alex Bennée, Linaro <br 
 class="newline" />Allen Chia, Oracle <br 
@@ -66642,7 +66679,7 @@ class="newline" />
 <!--l. 149--><p class="noindent" >The following non-members have provided valuable feedback on previous versions of
 this specification and are gratefully acknowledged:
 <h4 class="likesubsectionHead"><a 
- id="x1-868000C"></a>Reviewers</h4>
+ id="x1-869000D"></a>Reviewers</h4>
 <!--l. 154--><p class="noindent" >Aaron Conole, Red Hat <br 
 class="newline" />Adam Tao, Huawei <br 
 class="newline" />Alexander Duyck, Intel <br 
@@ -66743,12 +66780,12 @@ class="newline" />
 
                                                                   
 <a 
- id="x1-868001r813"></a>
-<!--l. 1--><p class="noindent" ><h2 class="appendixHead"><span class="titlemark">Appendix D</span>. <a 
- id="x1-869000D"></a>Revision History</h2>
+ id="x1-869001r813"></a>
+<!--l. 1--><p class="noindent" ><h2 class="appendixHead"><span class="titlemark">Appendix E</span>. <a 
+ id="x1-870000E"></a>Revision History</h2>
 The following changes have been made since version 1.2 of this specification:
 <a 
- id="x1-869001r1"></a><!--l. 8--><div class="longtable"> <table id="TBL-93" class="longtable" 
+ id="x1-870001r1"></a><!--l. 8--><div class="longtable"> <table id="TBL-93" class="longtable" 
  
 ><colgroup id="TBL-93-1g"><col 
 id="TBL-93-1"></colgroup><colgroup id="TBL-93-2g"><col 
@@ -69250,7 +69287,7 @@ class="enumerate-enumitem">Currently, a received encapsulated packet has an
         locking, etc.).
         <!--l. 1925-->
         <pre class="lstlisting" id="listing-307"><span class="label"><a 
- id="x1-869011r1"></a></span><span 
+ id="x1-870011r1"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -69289,7 +69326,7 @@ class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span
 class="pcrr8t-x-x-80">client2</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869012r2"></a></span><span 
+ id="x1-870012r2"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -69328,7 +69365,7 @@ class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869013r3"></a></span><span 
+ id="x1-870013r3"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -69352,7 +69389,7 @@ class="pcrr8t-x-x-80">tunnels</span></span><span style="color:#000000"><span
 class="pcrr8t-x-x-80">|&lt;--------+</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869014r4"></a></span><span 
+ id="x1-870014r4"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -69383,7 +69420,7 @@ class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span
 class="pcrr8t-x-x-80">+-------+</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869015r5"></a></span><span 
+ id="x1-870015r5"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -69419,7 +69456,7 @@ class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869016r6"></a></span><span 
+ id="x1-870016r6"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -69455,7 +69492,7 @@ class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span
 class="pcrr8t-x-x-80">v</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869017r7"></a></span><span 
+ id="x1-870017r7"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -69481,7 +69518,7 @@ class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span
 class="pcrr8t-x-x-80">+-----------------+</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869018r8"></a></span><span 
+ id="x1-870018r8"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -69510,7 +69547,7 @@ class="pcrr8t-x-x-80">host</span></span><span style="color:#000000"> </span><spa
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869019r9"></a></span><span 
+ id="x1-870019r9"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -69676,10 +69713,10 @@ class="td11">
  <!--l. 2064--><p class="noindent" >...
   <!--l. 2067-->
   <pre class="lstlisting" id="listing-308"><span class="label"><a 
- id="x1-869024r1"></a></span><span 
+ id="x1-870024r1"></a></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869025r2"></a></span><span 
+ id="x1-870025r2"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -69699,7 +69736,7 @@ class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span
 class="pcrr8t-x-x-80">+----------------------+</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869026r3"></a></span><span 
+ id="x1-870026r3"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -69726,7 +69763,7 @@ class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869027r4"></a></span><span style="color:#000000"><span 
+ id="x1-870027r4"></a></span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">+---------------|</span></span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">pci_rev_id</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">=</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
@@ -69740,7 +69777,7 @@ class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span
 class="pcrr8t-x-x-80">|-----+</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869028r5"></a></span><span style="color:#000000"><span 
+ id="x1-870028r5"></a></span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">|</span></span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">vfio</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">device</span></span><span style="color:#000000"> </span><span 
@@ -69766,7 +69803,7 @@ class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869029r6"></a></span><span style="color:#000000"><span 
+ id="x1-870029r6"></a></span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">|</span></span><span style="color:#000000"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -69798,7 +69835,7 @@ class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869030r7"></a></span><span style="color:#000000"><span 
+ id="x1-870030r7"></a></span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">|</span></span><span style="color:#000000"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -69822,7 +69859,7 @@ class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869031r8"></a></span><span style="color:#000000"><span 
+ id="x1-870031r8"></a></span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">|</span></span><span style="color:#000000"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -69870,7 +69907,7 @@ class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869032r9"></a></span><span style="color:#000000"><span 
+ id="x1-870032r9"></a></span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">+</span></span><span style="color:#000000"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span 
@@ -69883,7 +69920,7 @@ class="pcrr8t-x-x-80">+-----------------+</span></span><span style="color:#00000
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869033r10"></a></span><span style="color:#000000"><span 
+ id="x1-870033r10"></a></span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">|</span></span><span style="color:#000000"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span 
@@ -69911,7 +69948,7 @@ class="pcrr8t-x-x-80">|</span></span><span style="color:#000000"> </span><span s
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869034r11"></a></span><span style="color:#000000"><span 
+ id="x1-870034r11"></a></span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">|</span></span><span style="color:#000000"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span 
@@ -69932,7 +69969,7 @@ class="pcrr8t-x-x-80">|</span></span><span style="color:#000000"> </span><span s
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869035r12"></a></span><span style="color:#000000"><span 
+ id="x1-870035r12"></a></span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">|</span></span><span style="color:#000000"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span 
@@ -69967,7 +70004,7 @@ class="pcrr8t-x-x-80">|</span></span><span style="color:#000000"> </span><span s
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869036r13"></a></span><span style="color:#000000"><span 
+ id="x1-870036r13"></a></span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">|</span></span><span style="color:#000000"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span 
@@ -69980,7 +70017,7 @@ class="pcrr8t-x-x-80">+-----------------+</span></span><span style="color:#00000
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869037r14"></a></span><span style="color:#000000"><span 
+ id="x1-870037r14"></a></span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">|</span></span><span style="color:#000000"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -70028,11 +70065,11 @@ class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869038r15"></a></span><span style="color:#000000"><span 
+ id="x1-870038r15"></a></span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">+------+-------------------------+-----------+</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869039r16"></a></span><span 
+ id="x1-870039r16"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -70068,7 +70105,7 @@ class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869040r17"></a></span><span 
+ id="x1-870040r17"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span 
@@ -70093,7 +70130,7 @@ class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869041r18"></a></span><span 
+ id="x1-870041r18"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -70119,7 +70156,7 @@ class="pcrr8t-x-x-80">Driver</span></span><span style="color:#000000"> </span><s
 class="pcrr8t-x-x-80">notifications</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869042r19"></a></span><span 
+ id="x1-870042r19"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -70155,7 +70192,7 @@ class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869043r20"></a></span><span 
+ id="x1-870043r20"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">+----+------------+</span></span><span style="color:#000000"> </span><span 
@@ -70168,7 +70205,7 @@ class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span
 class="pcrr8t-x-x-80">+----+------------+</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869044r21"></a></span><span 
+ id="x1-870044r21"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">|</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
@@ -70196,7 +70233,7 @@ class="pcrr8t-x-x-80">A</span></span><span style="color:#000000"> </span><span s
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869045r22"></a></span><span 
+ id="x1-870045r22"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">|</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
@@ -70207,7 +70244,7 @@ class="pcrr8t-x-x-80">|-------------+----&gt;+-------------+</span></span><span 
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869046r23"></a></span><span 
+ id="x1-870046r23"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">|</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
@@ -70234,7 +70271,7 @@ class="pcrr8t-x-x-80">|</span></span><span style="color:#000000"> </span><span s
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869047r24"></a></span><span 
+ id="x1-870047r24"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">|</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
@@ -70254,7 +70291,7 @@ class="pcrr8t-x-x-80">+-------------+</span></span><span style="color:#000000"> 
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869048r25"></a></span><span 
+ id="x1-870048r25"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">+-----------------+</span></span><span style="color:#000000"> </span><span 
@@ -70266,7 +70303,7 @@ class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span
 class="pcrr8t-x-x-80">+-----------------+</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869049r26"></a></span><span 
+ id="x1-870049r26"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -70294,7 +70331,7 @@ class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869050r27"></a></span><span 
+ id="x1-870050r27"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -70325,7 +70362,7 @@ class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span
 class="pcrr8t-x-x-80">+----+------------+</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869051r28"></a></span><span 
+ id="x1-870051r28"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -70361,7 +70398,7 @@ class="pcrr8t-x-x-80">N</span></span><span style="color:#000000"> </span><span s
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869052r29"></a></span><span 
+ id="x1-870052r29"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -70390,7 +70427,7 @@ class="pcrr8t-x-x-80">+----&gt;+-------------+</span></span><span style="color:#
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869053r30"></a></span><span 
+ id="x1-870053r30"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -70427,7 +70464,7 @@ class="pcrr8t-x-x-80">|</span></span><span style="color:#000000"> </span><span s
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869054r31"></a></span><span 
+ id="x1-870054r31"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
@@ -70461,7 +70498,7 @@ class="pcrr8t-x-x-80">+-------------+</span></span><span style="color:#000000"> 
 class="pcrr8t-x-x-80">|</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
- id="x1-869055r32"></a></span><span 
+ id="x1-870055r32"></a></span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span 
