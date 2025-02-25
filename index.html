@@ -1,4 +1,4 @@
-<a href="https://github.com/rafaelgieschke/virtio-spec/actions/runs/13188788400">Source: https://github.com/rafaelgieschke/virtio-spec/actions/runs/13188788400</a><br />
+<a href="https://github.com/rafaelgieschke/virtio-spec/actions/runs/13522646716">Source: https://github.com/rafaelgieschke/virtio-spec/actions/runs/13522646716</a><br />
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
   "http://www.w3.org/TR/html4/loose.dtd">  
 <html > 
@@ -20266,10 +20266,10 @@ will be 65589 bytes long (14 bytes of Ethernet header, plus 40 bytes of the IPv6
 header, plus 65535 bytes of maximum IPv6 payload including any extension
 header), otherwise 1514 bytes. When VIRTIO_NET_F_HASH_REPORT is not
 negotiated, the required receive buffer size is either 65601 or 1526 bytes
-accounting for 20 bytes of <span 
+accounting for 12 bytes of <span 
 class="aeti-10">struct virtio_net_hdr </span>followed by receive packet. When
 VIRTIO_NET_F_HASH_REPORT is negotiated, the required receive buffer size is
-either 65609 or 1534 bytes accounting for 12 bytes of <span 
+either 65609 or 1534 bytes accounting for 20 bytes of <span 
 class="aeti-10">struct virtio_net_hdr </span>followed by
 receive packet.
 <a 
