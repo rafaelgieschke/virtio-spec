@@ -25200,7 +25200,7 @@ class="pcrr8t-x-x-80"> </span><span
 class="pcrr8t-x-x-80"> </span><span 
 class="pcrr8t-x-x-80"> </span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">le32</span></span><span style="color:#000000"> </span><span style="color:#000000"><span 
-class="pcrr8t-x-x-80">selectors_limit</span></span><span style="color:#000000"><span 
+class="pcrr8t-x-x-80">classifiers_limit</span></span><span style="color:#000000"><span 
 class="pcrr8t-x-x-80">;</span></span><span 
 class="pcrr8t-x-x-80"> </span><br /> 
 <span class="label"><a 
@@ -25264,8 +25264,8 @@ class="pcrr8t-x-x-80"> </span><br />
 class="pcrr8t-x-x-80">};</span></span></pre>
 <!--l. 2968--><p class="noindent" ><span 
 class="aeti-10">groups_limit</span>, and <span 
-class="aeti-10">selectors_limit </span>represent the maximum number of flow filter groups
-and selectors, respectively, that the driver can create. <span 
+class="aeti-10">classifiers_limit </span>represent the maximum number of flow filter groups
+and classifiers, respectively, that the driver can create. <span 
 class="aeti-10">rules_limit </span>is the maximum
 number of flow fiilter rules that the driver can create across all the groups.
 <span 
@@ -26141,7 +26141,7 @@ command VIRTIO_ADMIN_CMD_RESOURCE_OBJ_CREATE when the resource
 class="aeti-10">type </span>is VIRTIO_NET_RESOURCE_OBJ_FF_CLASSIFIER, if the number of flow
 filter selector objects in the device exceeds the configured driver capability
 <span 
-class="aeti-10">selectors_limit</span>.
+class="aeti-10">classifiers_limit</span>.
 <!--l. 3315--><p class="noindent" >The device SHOULD set <span 
 class="aeti-10">status </span>to VIRTIO_ADMIN_STATUS_EBUSY for the
 command VIRTIO_ADMIN_CMD_RESOURCE_OBJ_DESTROY for a flow filter
