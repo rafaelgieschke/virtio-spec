@@ -18,9 +18,8 @@ cd "${cur}/old"
 git checkout $oldrev
 while read -r rev; do
 	echo "Applying $rev"
-	git cherry-pick --keep-redundant-commits --allow-empty `git rev-list -1 -F --grep "$rev" $newrev` || exit 1
+	git cherry-pick --keep-redundant-commits --allow-empty `git rev-list -1 --grep "^$rev" $newrev` || exit 1
 done << 'EOF'
-content.tex Fix Driver notifications label
 editorial: update "Computer Language Definitions" URL
 EOF
 
@@ -53,3 +52,10 @@ ln -fs ./latexdiff/dist/latexdiff-fast ./latexdiff-fast
  --exclude-textcmd=chapter \
 --ignore-warnings -p diffpreamble.tex old/flat.tex \
 new/flat.tex > virtio-diff.tex
+
+cp virtio-diff.tex backup-diff.tex
+
+perl -pi -e 's/\\DIFaddbegin\s*(\\begin\{longtable\})\s*\\DIFaddend/$1/g' virtio-diff.tex
+perl -pi -e 's/\\DIFaddbegin\s*(\\end\{longtable\})\s*\\DIFaddend/$1/g'   virtio-diff.tex
+perl -pi -e 's/\\DIFdelbegin\s*\\begin\{tabular\}.*?\\DIFdelend//g'       virtio-diff.tex
+
